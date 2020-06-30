@@ -1,11 +1,18 @@
-version: "3.4"
+version: "3.5"
+
+networks:
+  node-react:
+    external:
+      name: node_react
 
 services:
-  server:
+  psp:
     image: node:alpine
     volumes:
       - "./:/home/node/app:rw,consistent"
     working_dir: "/home/node/app"
     command: "npm start"
+    networks:
+      - node-react
     ports:
       - 127.0.0.1:3010:3000
