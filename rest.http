@@ -1,1 +1,6 @@
 GET http://localhost:3010/
+Content-Type: application/json
+
+{
+  "transactionId": 30
+}
