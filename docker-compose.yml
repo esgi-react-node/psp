@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  server:
+    image: node:alpine
+    volumes:
+      - "./:/home/node/app:rw,consistent"
+    working_dir: "/home/node/app"
+    command: "npm start"
+    ports:
+      - 127.0.0.1:3010:3000

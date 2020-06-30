@@ -1,0 +1,23 @@
+{
+  "name": "psp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esgi-react-node/psp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esgi-react-node/psp/issues"
+  },
+  "homepage": "https://github.com/esgi-react-node/psp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
