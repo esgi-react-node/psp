@@ -7,7 +7,7 @@ app.use(express.json());
 
 
 app.get('/', function (req, res) {
-  res.sendStatus(200);
+  res.sendStatus(202);
   setTimeout(() => {
     axios.put(`${paymentAPIUrl}/transactions/${req.body.transactionId}/confirm`);
   }, 10000);
